@@ -1,4 +1,6 @@
-package ToDoList;
+package Code.Webinar.ToDoList;
+
+import Code.Webinar.DynamicArray;
 
 import java.util.Scanner;
 
@@ -13,7 +15,7 @@ public class App {
 
         int choice = 3; // Default value
         do {
-            System.out.println("\nTODO MENU:\n1. Add Item\n2. Show All\n3. Exit");
+            System.out.println("TODO MENU:\n1. Add Item\n2. Show All\n3. Exit");
             choice = userInput.nextInt();
             if (choice == 1) {
                 System.out.println("Enter New ToDo: ");
