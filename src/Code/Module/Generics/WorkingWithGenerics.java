@@ -16,9 +16,14 @@ public class WorkingWithGenerics {
         System.out.println(elephant);
         System.out.println(monkey);
         System.out.println(wolf);
-
         // crateForElephant.setContents(new Wolf()); // compile error.
     }
+
+    // Example method that implements Upper Bound Types
+    public static <T extends ShippableCrate> void ship(T shippableCrate){
+        System.out.println("Shipping... " + shippableCrate);
+    }
+
 }
 
 // Creating classes for Crate content.
