@@ -39,6 +39,7 @@ public class ListExamples {
 //        intList.addFirst(null);
 //        List<Integer> anotherList = intList; // 1
 //        System.out.println(anotherList);
+
         // Exercise 12.4.6
         List<Integer> integerList = new ArrayList<>(100);
         for (int i = 0; i < 100; i++) {
