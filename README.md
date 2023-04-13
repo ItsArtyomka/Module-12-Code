@@ -10,6 +10,7 @@ In this repository I learnt about:
 2. Queue
 3. List
 4. Set
-5. Generics
-6. Sorting and Comparison
-7. A bit about the **Big-O**
+5. Map
+6. Generics
+7. Sorting and Comparison
+8. A bit about the **Big-O**
