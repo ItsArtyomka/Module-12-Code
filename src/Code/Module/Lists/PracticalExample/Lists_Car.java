@@ -1,11 +1,11 @@
 package Code.Module.Lists.PracticalExample;
 
-public class Car {
+public class Lists_Car {
     private String name;
     private String brand;
     private boolean onSale;
 
-    public Car(String brand, String name, boolean onSale) {
+    public Lists_Car(String brand, String name, boolean onSale) {
         this.brand = brand;
         this.name = name;
         this.onSale = onSale;
@@ -40,7 +40,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "Lists_Car{" +
                 "name='" + name + '\'' +
                 ", brand='" + brand + '\'' +
                 ", onSale=" + onSale +

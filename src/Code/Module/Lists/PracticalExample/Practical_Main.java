@@ -12,52 +12,52 @@ public class Practical_Main {
     private static final String KIA = "KIA";
 
     public static void main(String[] args) {
-        Car car1 = new Car(TOYOTA, "GR86", false);
-        Car car2 = new Car(TOYOTA, "GR Supra", false);
-        Car car3 = new Car(TOYOTA, "GR Corolla", true);
-        Car car4 = new Car(BMW, "X5", false);
-        Car car5 = new Car(BMW, "X6", false);
-        Car car6 = new Car(BMW, "320i", true);
-        Car car7 = new Car(BMW, "E30 M3", false);
-        Car car8 = new Car(KIA, "Stinger", true);
-        Car car9 = new Car(KIA, "K5", false);
-        Car car10 = new Car(KIA, "Forte", true);
+        Lists_Car listsCar1 = new Lists_Car(TOYOTA, "GR86", false);
+        Lists_Car listsCar2 = new Lists_Car(TOYOTA, "GR Supra", false);
+        Lists_Car listsCar3 = new Lists_Car(TOYOTA, "GR Corolla", true);
+        Lists_Car listsCar4 = new Lists_Car(BMW, "X5", false);
+        Lists_Car listsCar5 = new Lists_Car(BMW, "X6", false);
+        Lists_Car listsCar6 = new Lists_Car(BMW, "320i", true);
+        Lists_Car listsCar7 = new Lists_Car(BMW, "E30 M3", false);
+        Lists_Car listsCar8 = new Lists_Car(KIA, "Stinger", true);
+        Lists_Car listsCar9 = new Lists_Car(KIA, "K5", false);
+        Lists_Car listsCar10 = new Lists_Car(KIA, "Forte", true);
 
-        List<Car> carList = new ArrayList<>();
-        carList.add(car1);
-        carList.add(car2);
-        carList.add(car3);
-        carList.add(car4);
-        carList.add(car5);
-        carList.add(car6);
-        carList.add(car7);
-        carList.add(car8);
-        carList.add(car9);
-        carList.add(car10);
+        List<Lists_Car> listsCarList = new ArrayList<>();
+        listsCarList.add(listsCar1);
+        listsCarList.add(listsCar2);
+        listsCarList.add(listsCar3);
+        listsCarList.add(listsCar4);
+        listsCarList.add(listsCar5);
+        listsCarList.add(listsCar6);
+        listsCarList.add(listsCar7);
+        listsCarList.add(listsCar8);
+        listsCarList.add(listsCar9);
+        listsCarList.add(listsCar10);
 
         // Not the right method to iterate through list.
-        /* for (Car car : carList) {
+        /* for (Lists_Car car : listsCarList) {
             if (car.getBrand().equals(KIA)) {
-                carList.remove(car);
+                listsCarList.remove(car);
             } else if (car.getBrand().equals(TOYOTA)) {
                 car.setOnSale(true);
             }
         }*/
 
         // The right way via using the Iterator:
-        Iterator<Car> iterator =carList.iterator();
+        Iterator<Lists_Car> iterator = listsCarList.iterator();
 
         while (iterator.hasNext()) {
-            Car car = iterator.next();
-            if (car.getBrand().equals(KIA)) {
+            Lists_Car listsCar = iterator.next();
+            if (listsCar.getBrand().equals(KIA)) {
                 iterator.remove();
-            } else if (car.getBrand().equals(TOYOTA)) {
-                car.setOnSale(true);
+            } else if (listsCar.getBrand().equals(TOYOTA)) {
+                listsCar.setOnSale(true);
             }
         }
 
-        for (Car car : carList) {
-            System.out.println(car);
+        for (Lists_Car listsCar : listsCarList) {
+            System.out.println(listsCar);
         }
     }
 }
